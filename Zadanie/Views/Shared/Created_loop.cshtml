@@ -1,0 +1,20 @@
+﻿@model Zadanie.Models.FormModel
+@{
+    ViewData["Title"] = "Form-Created";
+
+
+
+
+}
+
+<div class="text-left">
+    <h1 class="display-4">Dane z formularza</h1>
+    @Html.DisplayNameFor(model => model.imie):          @Html.DisplayFor(model => model.imie)
+    <br />
+    @Html.DisplayNameFor(model => model.ilosc_powtorzen):          @Html.DisplayFor(model => model.ilosc_powtorzen)
+    <br />
+
+   
+
+</div>
+<p>Dziękujemy za wypełnienie formularza</p>

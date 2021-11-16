@@ -1,0 +1,28 @@
+﻿@model Zadanie.Models.FormModel
+@{
+    ViewData["Title"] = "Form-Created";
+
+   
+    
+
+}
+
+<div class="text-left">
+    <h1 class="display-4">Dane z formularza</h1>
+    @Html.DisplayNameFor(model => model.imie):          @Html.DisplayFor(model => model.imie)
+    <br />
+    @Html.DisplayNameFor(model => model.ilosc_powtorzen):          @Html.DisplayFor(model => model.ilosc_powtorzen) 
+    <br />
+
+  @if (Model.ilosc_powtorzen >= 1 && Model.ilosc_powtorzen <= 5)
+    {
+    <p> ilość_powtorzeń <b>należy</b> do przedziału 1..5 </p>
+    }
+    else
+    {
+      <p> ilość_powtorzeń <b>nie należy</b> do przedziału 1..5 </p>
+    }
+
+
+
+<p>Dziękujemy za wypełnienie formularza</p>
